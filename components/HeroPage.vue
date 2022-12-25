@@ -117,13 +117,9 @@
       <!-- <scrollTopButton/> -->
     </div>
    
-    <cursor-fx
-        @before-start="onBeforeStart"
-        @after-start="onAfterStart"
-        @ready="onReady"
-        @before-destroy="onBeforeDestroy"
-        @after-destroy="onAfterDestroy"
-    ></cursor-fx>
+    
+      
+    <cursor-fx/>
   </div>
   
 </template>
