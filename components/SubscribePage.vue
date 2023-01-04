@@ -58,19 +58,27 @@
           </div>
           <!-- End Col -->
     
-          <!-- Social Brands -->
-          
+  
           <!-- End Social Brands -->
         </div>
       </div>
+              <!-- Social Brands -->
+             <!-- <scrollTopButton/> -->
     </footer>
         
   </template>
   
   <script>
+// import scrollTopButton from '/components/scrollTopButton.vue'
+
   export default {
+    components: {
+      // scrollTopButton,
+    }
+
+}
   
-  }
+
   </script>
   
   <style>

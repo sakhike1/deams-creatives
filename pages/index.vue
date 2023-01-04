@@ -11,6 +11,7 @@
     <LeadingDesign/>
     <SubscribeForm/>
    
+   
     
  
   </div>
@@ -33,6 +34,7 @@ import SubscribeForm from '/components/SubscribeForm.vue'
 
 
 
+
 export default {
     components: {
     NavBar,
@@ -45,6 +47,7 @@ export default {
     Testimonials,
     LeadingDesign,
     SubscribeForm,
+ 
  
    
     

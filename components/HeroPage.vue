@@ -3,7 +3,7 @@
     <div class="xl:container m-auto px-6 text-gray-600 md:px-12 xl:px-16">
       <div
         data-aos="fade-down-right"
-        class="
+        class="drop-shadow-md hover:drop-shadow-blue-500/50
           lg:bg-gray-50
           dark:lg:bg-darker
           lg:p-16
@@ -15,7 +15,10 @@
           justify-center
           md:space-y-0
           lg:items-center
+          
+          
         "
+  
       >
         <div class="md:5/12 lg:w-1/2">
           <img src="~/assets/image.png" loading="lazy" width="" height="" />
@@ -115,18 +118,24 @@
       
       <!-- <AnimatedCursor /> -->
       <!-- <scrollTopButton/> -->
+     
     </div>
    
     
       
-    <cursor-fx/>
+    <!-- <cursor-fx class="is-cursor-fx-active"/> -->
+    <!-- <Cursor/> -->
+    <!-- <ScrollUpButton/> -->
   </div>
   
 </template>
 
 <script>
+// import ScrollUpButton from './ScrollUpButton.vue'
+// import scrollUp from '~/vue-simple-scroll-up'
+// import Cursor from '@/components/Cursor.vue' 
 import aosMixin from '~/mixins/aos'
-import { CursorFx } from '@luxdamore/vue-cursor-fx';
+// import { CursorFx } from '@luxdamore/vue-cursor-fx';
 
 // import AnimatedCursor from 'vue-animated-cursor'
 // import scrollTopButton from '/components/scrollTopButton.vue'
@@ -137,14 +146,30 @@ import { CursorFx } from '@luxdamore/vue-cursor-fx';
 
 
 export default {
+  // props: ['ScrollUpButton'],
+  data() {
+    return {
+      x: 0
+    }
+  },
+  methods: {
+    onMousemove(e) {
+      this.x = e.clientX
+    }
+  },
   components: {
-    'cursor-fx': CursorFx,
+    // ScrollUpButton
+    // 'vue-scroll-to-top': scrollUp'cursor-fx': CursorFx,
+    // Cursor,
+    // 'vue-scroll-to-top': scrollUp
     // AnimatedCursor,
     // scrollTopButton
     
    
     // 'cursor-fx': CursorFx,
+    
   },
+  
   name: 'PageIndex',
   mixins: [aosMixin],
  
@@ -161,6 +186,11 @@ export default {
 
 .relative {
   margin-bottom: -10px;
+}
+
+
+.movearea {
+  transition: 0.3s background-color ease;
 }
 </style>
 

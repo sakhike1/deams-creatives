@@ -12,7 +12,27 @@
     ],
     // ...
   theme: {
-    extend: {},
+    extend: {
+      animation: {
+        'linethrough': 'linethrough 4s linear forwards',
+      },
+      keyframes: {
+        linethrough: {
+          '100%': {
+            'transform': 'translateX(0)'
+          },
+        },
+      },
+      fontFamily: {
+        'newsreader': ['Newsreader', 'cursive'],
+      },
+      fontSize: {
+        '10xl': ['12rem', { lineHeight: '1' }],
+      },
+      letterSpacing: {
+        extra: '0.5em',
+      },
+    }
   },
   plugins: [
     require('preline/plugin'),

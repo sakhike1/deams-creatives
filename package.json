@@ -12,6 +12,7 @@
     "lintfix": "prettier --write --list-different ."
   },
   "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^6.2.1",
     "@luxdamore/vue-cursor-fx": "^1.6.2",
     "@nuxtjs/axios": "^5.13.6",
     "@nuxtjs/toast": "^3.3.1",
@@ -26,6 +27,7 @@
     "vue": "^2.7.10",
     "vue-animated-cursor": "^1.0.3",
     "vue-server-renderer": "^2.7.10",
+    "vue-simple-scroll-up": "^0.1.5",
     "vue-template-compiler": "^2.7.10"
   },
   "devDependencies": {

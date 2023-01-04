@@ -1,18 +1,18 @@
 <template>
   <div class="home">
-    <ContactNav />
+    <NavBar />
     <ContactForm />
     <SubscribePage />
   </div>
 </template>
 
 <script>
-import ContactNav from '/components/ContactNav.vue'
+import NavBar  from '/components/NavBar.vue'
 import ContactForm from '/components/ContactForm.vue'
 import SubscribePage from '/components/SubscribePage.vue'
 export default {
   components: {
-    ContactNav,
+    NavBar ,
     ContactForm,
     SubscribePage,
   },

@@ -17,8 +17,8 @@
   <!-- Grid -->
   <div class="mx-auto max-w-3xl grid grid-cols-12 gap-6 lg:gap-8">
     <!-- Icon Block -->
-    <div class="col-span-6 sm:col-span-4 text-center">
-     <img class="mx-auto h-auto w-9 md:w-9 text-gray-800 dark:text-gray-200"  src="~/assets/icons8-topic-85.png" alt="">
+    <div data-aos="slide-up" class="col-span-6 sm:col-span-4 text-center">
+     <img class="mx-auto h-20 w-20  text-gray-800 dark:text-gray-200"  src="~/assets/icons8-topic-75 8.png" alt="">
       <div class="mt-2 sm:mt-6">
         <h3 class="text-lg font-semibold text-gray-500 dark:text-gray-200">
           Web applications
@@ -28,8 +28,8 @@
     <!-- End Icon Block -->
 
     <!-- Icon Block -->
-    <div class="col-span-6 sm:col-span-4 text-center">
-      <img class="mx-auto h-auto w-9 md:w-9 text-gray-800 dark:text-gray-200" src="~/assets/icons8-topic-90.png" alt="">
+    <div data-aos="slide-up" class="col-span-6 sm:col-span-4 text-center">
+      <img class="mx-auto h-20 w-20  text-gray-800 dark:text-gray-200" src="~/assets/Group 3.png" alt="">
       <div class="mt-2 sm:mt-6">
         <h3 class="text-lg font-semibold text-gray-500 dark:text-gray-200">
           Custom mobile apps
@@ -39,11 +39,11 @@
     <!-- End Icon Block -->
 
     <!-- Icon Block -->
-    <div class="col-span-6 col-start-4 sm:col-span-4 text-center">
-      <img class="mx-auto h-auto w-9 md:w-9 text-gray-800 dark:text-gray-200" src="~/assets/icons8-topic-75 2.png" alt="">
+    <div data-aos="slide-up" class="col-span-6 col-start-4 sm:col-span-4 text-center">
+      <img class="mx-auto h-20 w-20  text-gray-800 dark:text-gray-200" src="~/assets/icons8-project-management-50 2.png" alt="">
       <div class="mt-2 sm:mt-6">
         <h3 class="text-lg font-semibold text-gray-500 dark:text-gray-200">
-          Consulting
+          Validate your idea 
         </h3>
       </div>
     </div>

@@ -3,8 +3,8 @@
     <div class="py-16 bg-gradient-to-r from-gray-100 to-gray-300">
         <div class=" py-6 sm:py-8 lg:py-12">
             <div class="max-w-screen-2xl px-4 md:px-8 mx-auto">
-              <div class="max-w-xl flex flex-col items-center text-left mx-auto">
-          
+              <div class="max-w-xl flex flex-col text-left mx-auto">
+          <p class="text-left">Give us a call</p>
                 <h1 class="text-black-800 text-3xl sm:text-4xl md:text-5xl font-bold mb-8 md:mb-12">Give us a call your ideas matter to us </h1>
           
                 <div class="w-full flex flex-col sm:flex-row sm:justify-center gap-2.5">
@@ -19,7 +19,7 @@
         
         <div
           data-aos="fade-down-right"
-          class="
+          class=" 
           bg-gradient-to-r from-orange-600 to-orange-500
             dark:lg:bg-darker
             lg:p-16
@@ -32,7 +32,10 @@
             md:space-y-0
             lg:items-center
             hover:shadow-lg transition duration-300 ease-in-out
+            
           "
+          @mousemove="onMousemove"
+          :style="{ backgroundColor: `hsl(${x}, 80%, 50%)` }"
         >
           <div class="md:5/12 lg:w-1/2">
             <img src="~/assets/developer-team.png" loading="lazy" width="400px" height="400px" />
@@ -103,6 +106,17 @@
   
   
   export default {
+    data() {
+    return {
+      x: 0
+    }
+  },
+  methods: {
+    onMousemove(e) {
+      this.x = e.clientX
+    }
+  },
+
     components: {
       'cursor-fx': CursorFx,
       // AnimatedCursor,
@@ -127,5 +141,9 @@
   
   .relative {
     margin-bottom: -10px;
+  }
+
+  .movearea {
+    transition: 0.3s background-color ease;
   }
   </style>

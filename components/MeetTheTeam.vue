@@ -231,7 +231,7 @@
               dark:focus:ring-gray-700
               dark:focus:ring-offset-gray-800
             "
-            :to="{ path: 'ContactPage' }"
+            :to="{ path: 'CareerPage' }"
           >
             We are hiring
             <svg

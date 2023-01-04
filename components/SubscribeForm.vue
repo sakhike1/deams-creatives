@@ -62,12 +62,15 @@
         
         <!-- End Social Brands -->
       </div>
+      
     </div>
   </footer>
       
 </template>
 
 <script>
+
+
 export default {
 
 }
