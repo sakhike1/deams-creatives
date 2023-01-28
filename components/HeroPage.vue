@@ -2,23 +2,10 @@
   <div class="py-16 bg-gradient-to-r from-gray-100 to-gray-300">
     <div class="xl:container m-auto px-6 text-gray-600 md:px-12 xl:px-16">
       <div
-        data-aos="fade-down-right"
-        class="drop-shadow-md hover:drop-shadow-blue-500/50
-          lg:bg-gray-50
-          dark:lg:bg-darker
-          lg:p-16
-          rounded-[4rem]
-          space-y-6
-          md:flex
-          flex-row-reverse
-          md:gap-6
-          justify-center
-          md:space-y-0
-          lg:items-center
-          
-          
-        "
-  
+        data-aos="fade-down"
+        data-aos-easing="linear"
+        data-aos-duration="1500"
+        class="drop-shadow-md hover:drop-shadow-blue-500/50 lg:bg-gray-50 dark:lg:bg-darker lg:p-16 rounded-[4rem] space-y-6 md:flex flex-row-reverse md:gap-6 justify-center md:space-y-0 lg:items-center"
       >
         <div class="md:5/12 lg:w-1/2">
           <img src="~/assets/image.png" loading="lazy" width="" height="" />
@@ -37,15 +24,7 @@
           <div class="divide-y space-y-4 divide-gray-100 dark:divide-gray-800">
             <div class="mt-8 flex gap-4 md:items-center">
               <div
-                class="
-                  w-12
-                  h-12
-                  flex
-                  gap-4
-                  rounded-full
-                  bg-indigo-100
-                  dark:bg-indigo-900/20
-                "
+                class="w-12 h-12 flex gap-4 rounded-full bg-indigo-100 dark:bg-indigo-900/20"
               >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -62,11 +41,7 @@
               </div>
               <div class="w-5/6">
                 <h4
-                  class="
-                    font-semibold
-                    text-lg text-gray-700
-                    dark:text-indigo-300
-                  "
+                  class="font-semibold text-lg text-gray-700 dark:text-indigo-300"
                 >
                   Chat to us
                 </h4>
@@ -77,15 +52,7 @@
             </div>
             <div class="pt-4 flex gap-4 md:items-center">
               <div
-                class="
-                  w-12
-                  h-12
-                  flex
-                  gap-4
-                  rounded-full
-                  bg-teal-100
-                  dark:bg-teal-900/20
-                "
+                class="w-12 h-12 flex gap-4 rounded-full bg-teal-100 dark:bg-teal-900/20"
               >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -113,69 +80,33 @@
             </div>
           </div>
         </div>
-       
-      </div> 
-      
+      </div>
+
       <!-- <AnimatedCursor /> -->
       <!-- <scrollTopButton/> -->
-     
     </div>
-   
-    
-      
-    <!-- <cursor-fx class="is-cursor-fx-active"/> -->
-    <!-- <Cursor/> -->
-    <!-- <ScrollUpButton/> -->
   </div>
-  
 </template>
 
 <script>
-// import ScrollUpButton from './ScrollUpButton.vue'
-// import scrollUp from '~/vue-simple-scroll-up'
-// import Cursor from '@/components/Cursor.vue' 
 import aosMixin from '~/mixins/aos'
-// import { CursorFx } from '@luxdamore/vue-cursor-fx';
-
-// import AnimatedCursor from 'vue-animated-cursor'
-// import scrollTopButton from '/components/scrollTopButton.vue'
-
-
-
-// import { CursorFx } from '@luxdamore/vue-cursor-fx';
-
 
 export default {
-  // props: ['ScrollUpButton'],
   data() {
     return {
-      x: 0
+      x: 0,
     }
   },
   methods: {
     onMousemove(e) {
       this.x = e.clientX
-    }
+    },
   },
-  components: {
-    // ScrollUpButton
-    // 'vue-scroll-to-top': scrollUp'cursor-fx': CursorFx,
-    // Cursor,
-    // 'vue-scroll-to-top': scrollUp
-    // AnimatedCursor,
-    // scrollTopButton
-    
-   
-    // 'cursor-fx': CursorFx,
-    
-  },
-  
+  components: {},
+
   name: 'PageIndex',
   mixins: [aosMixin],
- 
-  
 }
-
 </script>
 
 <style src="@luxdamore/vue-cursor-fx/dist/CursorFx.css">
@@ -188,9 +119,42 @@ export default {
   margin-bottom: -10px;
 }
 
-
 .movearea {
   transition: 0.3s background-color ease;
 }
-</style>
 
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100vh;
+  z-index: 10;
+}
+
+.tile {
+  width: 60vmin;
+  flex: 0 0 auto;
+}
+
+.tile__figure {
+  margin: 0;
+  padding: 0;
+}
+
+.tile__image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+canvas {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100vh;
+  z-index: 9;
+}
+</style>

@@ -1,7 +1,7 @@
 <template>
-  <div>
+  <div class="home">
     <NavBar />
-    <CareerPage />
+    <ContactForm />
     <SubscribePage />
   </div>
 </template>

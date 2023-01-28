@@ -12,14 +12,7 @@
 
     <!-- Grid -->
     <div
-      class="
-        grid grid-cols-2
-        sm:grid-cols-3
-        md:grid-cols-4
-        lg:grid-cols-5
-        gap-x-6 gap-y-8
-        sm:gap-x-10 sm:gap-y-14
-      "
+      class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-x-6 gap-y-8 sm:gap-x-10 sm:gap-y-14"
     >
       <div class="text-center">
         <img
@@ -189,48 +182,12 @@
     <!-- Card -->
     <div class="mt-12 flex justify-center">
       <div
-        class="
-          border border-gray-200
-          p-1.5
-          pl-5
-          rounded-full
-          dark:border-gray-700
-        "
+        class="border  p-1.5 pl-5 rounded-full border-gray-300 hover:bg-gray-150"
       >
         <div class="flex items-center gap-x-3">
-          <span class="text-sm text-gray-500">Want to work with us?</span>
+          <span class="text-sm text-black">Want to work with us?</span>
           <nuxt-link
-            class="
-              inline-flex
-              justify-center
-              items-center
-              gap-x-2
-              text-center
-              bg-white
-              border
-              hover:border-gray-300
-              text-sm text-blue-600
-              hover:text-blue-700
-              font-medium
-              hover:shadow-sm
-              rounded-full
-              focus:outline-none
-              focus:ring-2
-              focus:ring-gray-400
-              focus:ring-offset-2
-              focus:ring-offset-white
-              transition
-              py-3
-              px-4
-              dark:bg-gray-900
-              dark:border-gray-700
-              dark:hover:border-gray-600
-              dark:text-blue-500
-              dark:hover:text-blue-400
-              dark:hover:shadow-slate-700/[.7]
-              dark:focus:ring-gray-700
-              dark:focus:ring-offset-gray-800
-            "
+            class="inline-flex justify-center items-center gap-x-2 text-center bg-blue-200 border hover:border-gray-300 text-sm text-white hover:text-blue-700 font-medium hover:shadow-sm rounded-full focus:outline-none focus:ring-2 focus:ring-gray-400 focus:ring-offset-2 focus:ring-offset-white transition py-3 px-4 dark:bg-gray-900 dark:border-gray-700 dark:hover:border-gray-600 dark:text-blue-500 dark:hover:text-blue-400 dark:hover:shadow-slate-700/[.7] dark:focus:ring-gray-700 dark:focus:ring-offset-gray-800"
             :to="{ path: 'CareerPage' }"
           >
             We are hiring
@@ -261,5 +218,4 @@
 export default {}
 </script>
 
-<style>
-</style>
+<style></style>

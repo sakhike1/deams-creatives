@@ -6,7 +6,11 @@
       "@/*": ["./*"],
       "~~/*": ["./*"],
       "@@/*": ["./*"]
-    }
+    },
+    "types": [
+      "@nuxt/types",
+      "nuxt-supabase"
+    ]
   },
   "exclude": ["node_modules", ".nuxt", "dist"]
 }
