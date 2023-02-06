@@ -21,15 +21,17 @@
         <ul :class="showMenu ? 'flex' : 'hidden'"
           class="flex-col mt-8 space-y-4 md:flex md:space-y-0 md:flex-row md:items-center md:space-x-10 md:mt-0">
           <li>
-            <a href="#consulting" class="text-black text-s hover:text-blue-300">Our services</a>
+            <nuxt-link to="/">
+              <a class="text-black text-s hover:text-blue-300">Our services</a></nuxt-link>
           </li>
           <li>
-            <a to="/" class="text-black text-s hover:text-blue-300" href="#Design">How we work
-            </a>
+            <nuxt-link to="Work"><a to="Services" class="text-black text-s hover:text-blue-300">How we work
+              </a> </nuxt-link>
           </li>
           <li>
-            <a class="text-black text-s hover:text-blue-300" href="#services">About us
-            </a>
+            <nuxt-link to="AboutDeams">
+              <a class="text-black text-s hover:text-blue-300">About us
+              </a></nuxt-link>
           </li>
           <li class="pt-2">
             <button type="button"
