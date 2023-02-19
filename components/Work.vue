@@ -31,8 +31,8 @@
 
                     <div>
                         <div
-                            class="flex items-center justify-center w-16 h-16 mx-auto bg-white border-2 border-gray-200 rounded-full shadow">
-                            <span class="text-xl font-semibold text-gray-700"> 2 </span>
+                            class="flex  items-center justify-center w-16 h-16 mx-auto bg-green-900 border-2 border-gray-200 rounded-full shadow">
+                            <span class="text-xl   font-semibold text-white"> 2 </span>
                         </div>
                         <h3 class="mt-6 text-xl font-semibold leading-tight text-black md:mt-10">Lets validate your idea
                         </h3>
